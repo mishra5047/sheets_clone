@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* .menu {
+    background: aqua;
+    height: 25px;
+} */
+.menu-options {
+    /* background: aquamarine; */
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    /* font-size: 16px; */
+}
+
+.calculation {
+    display: flex;
+    background: beige;
+    height: 25px;
+}
+
+.cells-content {
+    /* background: mediumpurple; */
+    height: calc( 100vh - 110px );
+    overflow: auto;
+    font-size: 12px;
+    position: relative;
+}
+
+.sheets {
+    /* background: cornflowerblue; */
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.row {
+    display: flex;
+}
+
+.cells {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cell {
+    /* border: 1px solid lightgray; */
+    min-height: 20px;
+    min-width: 70px;
+    outline: none;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    max-width: 70px;
+}
+
+.top-left-cell {
+    height: 20px;
+    width: 20px;
+    background: lightgray;
+    position: absolute;
+    z-index: 3;
+}
+
+.top-row {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: 2;
+    background: white;
+}
+
+.top-row-cell {
+    min-height: 20px;
+    min-width: 70px;
+    text-align: center;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.left-col {
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    background: white;
+}
+
+.left-col-cell {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    height: 20px;
+}
+
+#address {
+    width: 50px;
+    border: none;
+    text-align: center;
+}
+
+#formula {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.add-sheet {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgreen;
+    cursor: pointer;
+    border-right: 1px solid lightgray;
+}
+
+.add-sheet .fas {
+}
+
+.sheets-list {
+    display: flex;
+    height: 100%;
+}
+
+.sheet {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gray;
+    background: lightgrey;
+    cursor: pointer;
+}
+
+.active-sheet {
+    background: white;
+}
+
+.menu-options>div {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    width: 150px;
+    justify-content: space-around;
+    border-right: 1px solid lightgray;
+}
+
+.font-styles div:hover , .font-alignment div:hover {
+    background: lightgray;
+    opacity: 0.7;
+}
+
+.font-styles div {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.font-alignment div {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.font-family {
+    width: 180px !important;
+}
+
+#font-family {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    background: #ECEDEC;
+}
+
+#font-size {
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    background: #ECEDEC;
+}
+
+.active-menu {
+    background: lightgray;
+}
+
+.active-cell{
+    border: 1px solid black;
+}
+
+.active-item{
+    background: lightgray;
+}
